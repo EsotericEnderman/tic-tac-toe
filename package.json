@@ -24,7 +24,9 @@
 		"css-html-js",
 		"js-html-css",
 		"supersimpledev",
-		"css-js-html"
+		"css-js-html",
+		"tictactoe",
+		"tictactoe-game"
 	],
 	"repository": {
 		"type": "git",
