@@ -1,0 +1,53 @@
+{
+	"name": "tic-tac-toe",
+	"description": "This was part of the [JS course](https://github.com/Slqmy/Amazon-Clone) that I did, I enjoyed the project so much that I decided to make a separate repository for it.\n\nThe tic tac toe algorithm isn't perfect, but it can at least draw every single game (on hard difficulty).",
+	"author": "@🍉 Slqmy#5014",
+	"version": "1.0.0",
+	"license": "ISC",
+	"keywords": [
+		"css",
+		"html",
+		"learning",
+		"website",
+		"tic-tac-toe-game",
+		"js",
+		"html-css",
+		"css-js",
+		"htmlcss",
+		"htmljs",
+		"html-js-css",
+		"js-css-html",
+		"tic-tac-toe",
+		"css-html",
+		"htmlcssjs",
+		"csshtml",
+		"css-html-js",
+		"js-html-css",
+		"supersimpledev",
+		"css-js-html"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Slqmy/Amazon-Clone.git"
+	},
+	"homepage": "https://github.com/Slqmy/Amazon-Clone#readme",
+	"bugs": {
+		"url": "https://github.com/Slqmy/Amazon-Clone/issues"
+	},
+	"scripts": {
+		"prettier": "npx prettier --write .",
+		"format": "npx prettier --write .",
+		"prettier:check": "npx prettier --check .",
+		"format:check": "npx prettier --check .",
+		"check-prettier": "npx prettier --check .",
+		"eslint": "npx eslint --fix .",
+		"eslint:check": "npx eslint ."
+	},
+	"devDependencies": {
+		"@html-eslint/eslint-plugin": "^0.19.0",
+		"@html-eslint/parser": "^0.19.0",
+		"eslint": "^8.42.0",
+		"eslint-plugin-html": "^7.1.0",
+		"prettier": "2.8.8"
+	}
+}
