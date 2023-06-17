@@ -1,0 +1,217 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"extends": "eslint:recommended",
+	"parserOptions": {
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"plugins": ["html", "@html-eslint"],
+	"overrides": [
+		{
+			"files": ["*.html"],
+			"parser": "@html-eslint/parser",
+			"extends": ["plugin:@html-eslint/recommended"],
+			"rules": {
+				"@html-eslint/indent": ["error", "tab"],
+				"@html-eslint/require-closing-tags": "off",
+				"@html-eslint/no-extra-spacing-attrs": "off"
+			}
+		}
+	],
+	"rules": {
+		"no-div-regex": "error",
+		"for-direction": "error",
+		"camelcase": "error",
+		"no-mixed-spaces-and-tabs": "off",
+		"no-const-assign": "error",
+		"no-case-declarations": "off",
+		"no-dupe-args": "error",
+		"no-dupe-class-members": "error",
+		"no-dupe-else-if": "error",
+		"no-dupe-keys": "error",
+		"no-control-regex": "off",
+		"no-duplicate-case": "error",
+		"no-duplicate-imports": "error",
+		"no-func-assign": "error",
+		"no-invalid-regexp": "error",
+		"no-irregular-whitespace": "error",
+		"no-sparse-arrays": "error",
+		"no-unreachable-loop": "error",
+		"no-unsafe-negation": "error",
+		"no-unsafe-finally": "error",
+		"block-scoped-var": "error",
+		"no-unused-expressions": [
+			"error",
+			{
+				/**
+				 * Short circuits are expressions that use the guard operator or the or operator. E.g.,
+				 *
+				 * condition && f();
+				 *
+				 * This is basically shorthand for:
+				 *
+				 * if (condition) f();
+				 */
+				"allowShortCircuit": true,
+				"allowTernary": true
+			}
+		],
+		"no-unused-labels": "error",
+		"use-isnan": "error",
+		"eqeqeq": "error",
+		"no-eval": "error",
+		"no-extend-native": "error",
+		"no-extra-bind": "error",
+		"no-eq-null": "error",
+		/**
+		 * Empty catch blocks in try-catch statements are allowed.
+		 */
+		"no-empty": ["error", {"allowEmptyCatch": true}],
+		"array-callback-return": "error",
+		"constructor-super": "error",
+		"getter-return": "error",
+		"no-class-assign": "error",
+		"no-useless-computed-key": "error",
+		"no-compare-neg-zero": "error",
+		"no-cond-assign": "error",
+		"no-label-var": "error",
+		"no-constant-binary-expression": "error",
+		"no-constant-condition": "error",
+		"no-empty-character-class": "error",
+		"no-empty-pattern": "error",
+		"no-implicit-coercion": "error",
+		"no-implied-eval": "error",
+		"no-ex-assign": "error",
+		"no-fallthrough": "error",
+		"no-import-assign": "error",
+		"no-loss-of-precision": "error",
+		"no-misleading-character-class": "error",
+		"no-new-native-nonconstructor": "error",
+		"no-new-symbol": "error",
+		"no-obj-calls": "error",
+		"no-self-assign": "error",
+		"no-self-compare": "error",
+		"no-template-curly-in-string": "error",
+		"no-prototype-builtins": "error",
+		"no-undef": "error",
+		"no-multi-str": "error",
+		"no-nested-ternary": "off",
+		/**
+		 * This option may conflict with prettier. You can just disable it for that line or refactor your code.
+		 *
+		 * More info: https://github.com/prettier/eslint-config-prettier#no-unexpected-multiline
+		 */
+		"no-unexpected-multiline": "error",
+		"no-unreachable": "error",
+		"no-unsafe-optional-chaining": "error",
+		"valid-typeof": "error",
+		"default-case-last": "error",
+		"dot-notation": "error",
+		"func-name-matching": "error",
+		"func-style": "error",
+		"new-cap": "error",
+		"no-array-constructor": "error",
+		"no-return-assign": "error",
+		"no-sequences": "error",
+		"grouped-accessor-pairs": "error",
+		"no-bitwise": "error",
+		"no-else-return": "error",
+		"no-extra-boolean-cast": "error",
+		"no-extra-label": "error",
+		"no-global-assign": "error",
+		"no-invalid-this": "error",
+		"no-lone-blocks": "error",
+		"no-inner-declarations": "error",
+		/**
+		 * eslint-config-prettier says that this option may conflict with prettier, but from my testing it seems fine.
+		 *
+		 * More info: https://github.com/prettier/eslint-config-prettier#no-mixed-operators
+		 */
+		"no-mixed-operators": [
+			"error",
+			{
+				"groups": [
+					["&", "|", "^", "~", "<<", ">>", ">>>"],
+					["==", "!=", "===", "!==", ">", ">=", "<", "<="],
+					["&&", "||"],
+					["in", "instanceof"]
+				],
+				"allowSamePrecedence": true
+			}
+		],
+		"no-new-func": "error",
+		"no-new-object": "error",
+		"no-new-wrappers": "error",
+		"no-throw-literal": "error",
+		"no-this-before-super": "error",
+		"no-useless-call": "error",
+		"no-unmodified-loop-condition": "error",
+		"no-undef-init": "error",
+		"no-unneeded-ternary": "error",
+		"no-useless-catch": "error",
+		"no-useless-concat": "error",
+		"no-useless-constructor": "error",
+		"no-useless-escape": "error",
+		"no-useless-rename": "error",
+		"no-useless-return": "error",
+		"no-void": "error",
+		"operator-assignment": "error",
+		"prefer-arrow-callback": "error",
+		"prefer-object-spread": "error",
+		"prefer-regex-literals": "error",
+		"prefer-spread": "error",
+		"prefer-template": "error",
+		"accessor-pairs": "error",
+		"object-shorthand": "error",
+		"prefer-numeric-literals": "error",
+		"sort-imports": "error",
+		"sort-vars": "error",
+		"vars-on-top": "error",
+		"padding-line-between-statements": "error",
+		/**
+		 * This rule may sometimes "conflict" with prettier, however it is easy to fix.
+		 * For example prettier may find that an if statement followed by a function call is too long for a single line.
+		 *
+		 * if (someReallyLongConditionHere) aReallyLongFunctionNameHere();
+		 *
+		 * It would format it to be like this:
+		 *
+		 * if (someReallyLongConditionHere)
+		 *  	aReallyLongFunctionNameHere();
+		 *
+		 * ESLint would find issues with this, but it can be prevented simply by adding curly brackets.
+		 *
+		 * if (someReallyLongConditionHere) {
+		 *  	aReallyLongFunctionNameHere();
+		 * }
+		 *
+		 * More info: https://github.com/prettier/eslint-config-prettier#curly
+		 */
+		"curly": ["error", "multi-line"],
+		/**
+		 * Inline comments can't be longer than 80 characters.
+		 */
+		"no-inline-comments": ["error", {"ignorePattern": "^[\\s\\S]{0,60}$"}],
+		"handle-callback-err": "off",
+		"max-nested-callbacks": ["error", {"max": 4}],
+		"max-statements-per-line": ["error", {"max": 2}],
+		"no-console": "off",
+		"no-empty-function": "error",
+		"no-lonely-if": "error",
+		"no-var": "error",
+		"prefer-const": "error",
+		"spaced-comment": "error",
+		"yoda": "error",
+		"no-shadow": "error",
+		/**
+		 * Specifically *variables* are ignored, as ESLint fails to recognise when, for example, they are used in a HTML event.
+		 *
+		 * This rules behaves as expected for other things, for example function parameters.
+		 */
+		"no-unused-vars": ["error", {"varsIgnorePattern": "."}],
+		"no-use-before-define": "error"
+	}
+}

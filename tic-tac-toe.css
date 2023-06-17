@@ -1,0 +1,141 @@
+body {
+	font-family: Roboto, Arial, Helvetica, sans-serif;
+
+	background-color: black;
+	color: white;
+}
+
+div.title-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1.title {
+	text-align: center;
+	height: 38.5px;
+	margin-right: 5px;
+}
+
+img.icon {
+	height: 38.5px;
+	margin-left: 5px;
+}
+
+div.selection-wrapper {
+	text-align: center;
+}
+
+select.difficulty-selection {
+	height: 35px;
+	width: 135px;
+
+	background-color: white;
+
+	border: none;
+	border-radius: 4px;
+}
+
+div.button-wrapper {
+	text-align: center;
+}
+
+button.start-game-button {
+	color: white;
+	background-color: rgb(44, 184, 44);
+	box-shadow: 0 0 20px rgba(44, 184, 44, 0.85);
+
+	border: none;
+	border-radius: 4px;
+
+	height: 35px;
+	width: 135px;
+
+	margin-top: 15px;
+
+	transition: box-shadow 0.15s;
+}
+
+button.start-game-button:active {
+	box-shadow: none;
+}
+
+button.end-game-button {
+	color: white;
+	background-color: red;
+	box-shadow: 0 0 20px rgba(255, 0, 0, 0.85);
+
+	border: none;
+	border-radius: 4px;
+
+	height: 35px;
+	width: 135px;
+
+	margin-top: 15px;
+
+	transition: box-shadow 0.15s;
+}
+
+button.end-game-button:active {
+	box-shadow: none;
+}
+
+div.board-container-wrapper {
+	display: flex;
+	justify-content: center;
+
+	margin-top: 25px;
+}
+
+div.board-container {
+	display: grid;
+	grid-template-columns: 80px 80px 80px;
+
+	row-gap: 10px;
+	column-gap: 10px;
+}
+
+div.board-element {
+	position: relative;
+}
+
+div.move {
+	position: absolute;
+
+	top: 10px;
+	right: 10px;
+}
+
+img.grey-square {
+	width: 80px;
+
+	cursor: pointer;
+}
+
+img.move-icon {
+	width: 60px;
+}
+
+p.game-status {
+	text-align: center;
+}
+
+div.credit-container {
+	position: absolute;
+
+	display: flex;
+
+	top: 5px;
+	left: 5px;
+}
+
+img.flaticon-icon {
+	height: 20px;
+	margin-right: 2px;
+}
+
+a.credits {
+	color: white;
+	height: 20px;
+	margin-left: 2px;
+}
