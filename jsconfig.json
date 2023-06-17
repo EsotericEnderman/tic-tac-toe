@@ -1,0 +1,11 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "ESNext",
+		"moduleResolution": "nodenext",
+		"checkJs": true,
+		"allowJs": true
+	},
+	"include": ["*.js", "*.html"],
+	"exclude": ["node_modules"]
+}
