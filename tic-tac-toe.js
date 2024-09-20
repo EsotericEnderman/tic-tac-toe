@@ -1,5 +1,3 @@
-/* eslint-disable no-use-before-define */
-/* eslint-disable func-style */
 let gameBoard = ["", "", "", "", "", "", "", "", ""];
 const gameBoardElement = document.querySelector("div.js-board-container");
 
@@ -206,10 +204,8 @@ function playComputerMove() {
 
 	setTimeout(() => {
 		const moveIndex =
-			// @ts-ignore
 			difficultySelection.value === "Easy" ||
-			// @ts-ignore
-			(difficultySelection.value === "Medium" && Math.random() > 0.5)
+				(difficultySelection.value === "Medium" && Math.random() > 0.5)
 				? pickRandomMove()
 				: pickBestMove();
 		playMove(moveIndex, computerPiece);
@@ -272,7 +268,6 @@ startGameButton.addEventListener("click", () => {
 		gameStatus.innerHTML = "";
 	} else if (
 		!gameStatus.innerHTML &&
-		// @ts-ignore
 		difficultySelection.value !== "Select Difficulty"
 	) {
 		startGameButton.classList.remove(
